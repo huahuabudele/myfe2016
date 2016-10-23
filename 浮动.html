@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 200px;
+            height: 50px;
+            /*float:left;*/
+            /*/!*display:inline-block;*!/不支持*/
+            /*让元素横过来*/
+            /*要在这里设置颜色会设置成3个相同的颜色想设置不同的颜色在body里加id*/
+            display: inline-block;
+            /*这样的话就会默认产生间隙*/
+        }
+        #a{
+            background: #ff0000;
+            float :right;
+            /*只给a加，a浮动到右边，且将空间释放*/
+            /*#是id选择器*/
+            /*将right改为left它还是将空间释放，被覆盖了*/
+            /*都左浮动还是顺序排列，都向右浮动谁先浮动谁排在最右边*/
+        }
+        #b{
+            background: #00ff00;
+        }
+        #c{
+            background: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">a</div>
+    <div id="b">b</div>
+    <div id="c">c</div>
+<!--id也是属性，大家的属性不能一样-->
+</body>
+</html>
