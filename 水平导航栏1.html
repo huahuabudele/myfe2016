@@ -14,8 +14,29 @@
                         /*width: 120px;*/
                         /*height: 30px;*/
                         /*弄不了，得用盒模型*/
+                        /*网页中所有的标签都是框*/
+                        /*行元素不能设置宽和高，由内容撑起来*/
+                        display: block;
+                        /*行可以变块*/
+                        /*inline变行，block变块*/
+                        /*inline-block水平排列可以设置宽高，ie6不支持*/
                     }
                     /*a为标签选择器*/
+                    h1{
+                        bacground:rgb(0,0,0);
+                        /*rgb(255,0,0);*/
+                        /*或者background:#ff0000;*/
+                        /*红蓝绿排列*/
+                        width:120px;
+                        height: 50px;
+                    }
+                    p{
+                        background: #00ff00;
+                    }
+                    div{
+                        background:#0000ff;
+                    }
+                    /*块积元素的宽度是自适应*/
                 </style>
         <meta name="keywords"content="鲜花，各种花水仙花"/>
     <!--给搜索引擎看的，用户看不到-->
@@ -24,9 +45,22 @@
      <a href="#">link1</a>
      <a href="#">link2</a>
      <a href="#">link3</a>
+        <span>hehe</span>
+     <!--a he span横着排列-->
+     <button>hoho</button>
+     <!--三个元素都为行元素-->
+     <!--缩进用tab-->
      <!--#为占位符，-->
      <!--<a href="#"style="background: gray;text-decoration: none">link1</a>-->
 <!--none:underline overline linestrough-->
      <!--很麻烦，不建议，内容要和样式分离-->
+        <h1>这是h1</h1>
+        <h6>zheshih6</h6>
+     <!--h1叫做标题-->
+     <!--h1到h6越来越小-->
+        <p>hhahahaha </p>
+     <!--/paragraph一段文字-->
+        <div>zheshidiv</div>
+     <!--专门做分块和布局的-->
      </body>
 </html>
