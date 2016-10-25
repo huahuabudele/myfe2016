@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>e e e </title>
+    <style>
+        /*样式重置*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*}*/
+        /*ul{*/
+            /*list-style: none;*/
+            /*background: #ff0000;*/
+            /*padding: 0px;*/
+            /*/!!*把padding设置成0不兼容*!/还需再设置li*!            /!*disc小点*!/*/
+            /*/!*circle圆*!/*/
+            /*/!*square方块*!/*/
+            /*/!*decimal数字*!/*/
+        /*}*/
+
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            float: left;
+            width: 120px;
+            height: 30px;
+            background: #cccccc;
+            margin-right: 5px;
+            text-align: center;
+            line-height: 30px;
+        }
+        /*样式重置和ul a必须设置*/
+        body{
+            padding: 0px;
+            /*boddy会有八个像素的外边距，所以需要样式重置*/
+        }
+        a{
+            /*ul a之类的叫标签选择器*/
+            /*为了准确定位给Ul加id*/
+            /*相对于父元素*/
+            width: 100%;
+            height: 100%;
+            /*a是行元素不能设置宽高，变成块元素*/
+            display: block;
+            /*让小手充满整个框框*/
+
+            /*text-align: center;*/
+            /*这个效果应该加在li上。让li居中*/
+        }
+            /*margin设置为0没有用，必须设置ul
+
+        /*li and ul 有空隙*/
+        /*塌陷问题，直接把父元素高度写死，这种方法不推荐*/
+        /*ul{*/
+            /*overflow: hidden本意为溢出隐藏*/
+        /*考虑兼容性问题还是要写死*/
+
+        /*}*/
+       /**/
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <!--#menu选中li-->
+        <!--#menu li{}后代选择器-->
+        <!--&lt;!&ndash;#menu li a&ndash;&gt;或者直接写#menu a-->
+        <li><a href="#">link1</a> </li>
+        <li><a href="#">link2</a> </li>
+        <li><a href="#">link3</a> </li>
+    </ul>
+<!--ol order list有序列表 Ul无序列表-->
+
+</body>
+</html>
